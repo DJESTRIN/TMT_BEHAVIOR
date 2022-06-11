@@ -10,5 +10,5 @@ boxs=( 6 5 9 10 11 14 15 12 13 7 4 1 3 2 )
 
 for IP in "${IPs[@]}"
 do
-sshpass -p $t_pwd ssh -t $IP
+sshpass -p $t_pwd ssh -t $IP 'echo "Success" && exit; exec bash -l' && echo "${boxs[@]}"
 done
