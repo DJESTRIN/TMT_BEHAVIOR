@@ -1,1 +1,10 @@
 #TMT behavior code
+This code is written to virtually control a swarm of raspberry pi computers for a ~15 behavioral chambers. 
+All code is written in Bash or Python. The primary computer is nicknamed the keeper, all other raspberry pi computers
+make up the swarm.
+
+The code will be run in the following steps:
+(1) ssh_init.sh initalizes the first ssh to verify all the target pis in swarm
+(2) config_pis.sh sequentially controls each pi in swarm. Each computer is prepared via installing requirements.txt.
+(3) RunTMT.sh is ran during actually experiment via TMT.py
+(4) ZipSync.sh Zips all relevant data in each pi and sends it to external drive. 
