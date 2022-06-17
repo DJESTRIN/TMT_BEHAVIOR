@@ -7,8 +7,8 @@ sudo rm -rf temp
 sudo rm -rf base
 
 #All targets in orchestra
-IPs=( pi@192.168.0.119 )
-target_password="pi"
+cd ~/TMT_BEHAVIOR/
+Lines=$(cat IPs.txt)
 
 # SSH in and prepare the PIs
 # Set up folders
@@ -16,31 +16,29 @@ base_dirs=( /home/pi/base/logs/ /home/pi/base/videos/ /home/pi/base/data/ )
 code_dir=( /home/pi/base/code/temp/ )
 
 #Loop through IP addresses
-for IP in "${IPs[@]}"
+for IP in $Lines;
 do
 
 	#build base directories
-	for d in "${base_dirs[@]}"
+	for d in "${base_dirs[@]}";
 	do
 		echo $d
-		sshpass -p $target_password ssh -t $IP\
-		'sudo mkdir -p '$d' && exit; \
-		exec bash -l' || echo "Error building the base directory"
+		sshpass -p "raspberry" ssh -t ${IP[0]} 'sudo mkdir -p '$d' && exit; exec bash -l' || \
+		sshpass -p "pi" ssh -tt ${IP[0]} 'sudo mkdir -p '$d' && exit; exec bash -l'
 	done
 
 #git clone all nessesary code
-sshpass -p $target_password ssh -t $IP 'git clone\
-https://github.com/DJESTRIN/TMT_BEHAVIORAL_TRACKING temp && sudo mv -v temp '${base_dirs[1]}' &&\
-sudo rm -rf temp\
-&& exit; exec bash -l' || echo "Error with $IP"
+sshpass -p "raspberry" ssh -tt ${IP[0]} 'git clone https://github.com/DJESTRIN/TMT_BEHAVIOR/ temp && sudo mv -v temp '${base_dirs[1]}' &&\
+sudo rm -rf temp && exit; exec bash -l' || sshpass -p "pi" ssh -tt ${IP[0]} 'git clone https://github.com/DJESTRIN/TMT_BEHAVIOR/ temp && sudo mv -v temp '${base_dirs[1]}' &&\
+sudo rm -rf temp && exit; exec bash -l'
 done
 
 # Install all nessesary packages
-for IP in "${IPs[@]}"
-do 
-sshpass -p $target_password ssh -t $IP 'cd '${code_dir[0]}' && pip install -r requirements.txt && exit\
-exec bash -l' || echo "Error with installing requirements"
-done 
+for IP in $Lines;
+do
+sshpass -p "raspberry" ssh -tt ${IP[0]} 'cd '${code_dir[0]}' && pip install -r requirements.txt && exit;\
+ exec bash -l' || sshpass -p "pi" ssh -tt ${IP[0]} 'cd '${code_dir[0]}' && pip install -r requirements.txt && exit; exec bash -l'
+done
 
 echo "Finished preparing this raspberry pi"
-echo off 
+echo off
