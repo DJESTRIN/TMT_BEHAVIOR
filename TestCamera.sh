@@ -5,10 +5,10 @@ echo on
 cd ~/TMT_BEHAVIOR/
 Lines=$(cat IPs.txt)
 
-for IP in $Lines;
+while IFS=, read  IP box;
 do
 #ssh in and run test.py
-sshpass -p "raspberry" ssh -tt ${IP[0]} 'python test.py && rsync -var ~/base/videos/test.h264 pi@XXX.XXX.X.XXX:/X/ && \
-exit; exec bash -l'
-done
+echo IP box
+sshpass -p "estrin1" ssh -tt ${IP} 'python test.py && rsync -var ~/test_zip.zip pi@192.168.0.147:~/video_archive/'${box}'/ && exit; exec bash -l'
+done < IPS.txt
 

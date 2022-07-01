@@ -12,8 +12,8 @@ Lines=$(cat IPs.txt)
 
 # SSH in and prepare the PIs
 # Set up folders
-base_dirs=( /home/pi/base/logs/ /home/pi/base/videos/ /home/pi/base/data/ )
-code_dir=( /home/pi/base/code/temp/ )
+base_dirs=( /home/pi/base/logs/ /home/pi/base/videos/ /home/pi/base/data/ /home/pi/base/code/ )
+code_dir=( /home/pi/base/code/temp/)
 
 #Loop through IP addresses
 for IP in $Lines;
@@ -23,21 +23,19 @@ do
 	for d in "${base_dirs[@]}";
 	do
 		echo $d
-		sshpass -p "raspberry" ssh -t ${IP[0]} 'sudo mkdir -p '$d' && exit; exec bash -l' || \
-		sshpass -p "pi" ssh -tt ${IP[0]} 'sudo mkdir -p '$d' && exit; exec bash -l'
+		sshpass -p "estrin1" ssh -t ${IP[0]} 'sudo mkdir -p '$d' && sudo rm -rf ~/temp && sudo rm -rf '${code_dir[0]}' && exit; exec bash -l'
 	done
 
 #git clone all nessesary code
-sshpass -p "raspberry" ssh -tt ${IP[0]} 'git clone https://github.com/DJESTRIN/TMT_BEHAVIOR/ temp && sudo mv -v temp '${base_dirs[1]}' &&\
-sudo rm -rf temp && exit; exec bash -l' || sshpass -p "pi" ssh -tt ${IP[0]} 'git clone https://github.com/DJESTRIN/TMT_BEHAVIOR/ temp && sudo mv -v temp '${base_dirs[1]}' &&\
+sshpass -p "estrin1" ssh -tt ${IP[0]} 'git clone https://github.com/DJESTRIN/TMT_BEHAVIOR/ temp && sudo mv -v temp '${base_dirs[3]}' &&\
 sudo rm -rf temp && exit; exec bash -l'
 done
 
 # Install all nessesary packages
 for IP in $Lines;
 do
-sshpass -p "raspberry" ssh -tt ${IP[0]} 'cd '${code_dir[0]}' && pip install -r requirements.txt && exit;\
- exec bash -l' || sshpass -p "pi" ssh -tt ${IP[0]} 'cd '${code_dir[0]}' && pip install -r requirements.txt && exit; exec bash -l'
+sshpass -p "estrin1" ssh -tt ${IP[0]} 'cd '${code_dir[0]}' && pip install -r requirements.txt && exit;\
+ exec bash -l'
 done
 
 echo "Finished preparing this raspberry pi"
