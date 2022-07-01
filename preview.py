@@ -4,7 +4,7 @@ import os
 import time
 
 filename = str(time.time())+"_test.h264"
-directory = "~/base/videos/"
+directory = '~/base/videos/'
 camera = picamera.PiCamera()
 os.chdir(directory)
 camera.start_recording(filename)
