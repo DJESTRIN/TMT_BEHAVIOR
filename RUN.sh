@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "HI"
-python helloworld.py
+python ~/base/code/temp/helloworld.py
 exit
 exec $SHELL
