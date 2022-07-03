@@ -1,4 +1,5 @@
 #!/bin/bash
 echo "HI"
-python print('Hello')
+python helloworld.py
 exit
+exec $SHELL
