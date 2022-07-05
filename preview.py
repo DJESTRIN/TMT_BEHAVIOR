@@ -2,6 +2,7 @@ import picamera
 from zipfile import ZipFile
 import os
 import datetime
+import time
 
 now = datetime.datetime.now()
 now = now.strftime("%Y_%m_%d_%H_%M_%S")
