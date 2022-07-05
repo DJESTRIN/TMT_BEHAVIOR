@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "HI"
-python ~/base/code/temp/helloworld.py
+echo "Recording video"
+python ~/base/code/temp/preview.py
 exit
 exec $SHELL
