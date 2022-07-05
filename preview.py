@@ -3,7 +3,7 @@ from zipfile import ZipFile
 import os
 import datetime
 
-now = datetime.now()
+now = datetime.datetime.now()
 now = now.strftime("%Y_%m_%d_%H_%M_%S")
 
 filename = now + "_test.h264"
