@@ -34,7 +34,7 @@ done
 # Install all nessesary packages
 for IP in $Lines;
 do
-sshpass -p "estrin1" ssh -tt ${IP[0]} 'cd '${code_dir[0]}' && pip install -r requirements.txt && sudo apt-get install screen && exit;\
+sshpass -p "estrin1" ssh -tt ${IP[0]} 'cd '${code_dir[0]}' && pip install -r requirements.txt && sudo apt-get install sshpass && sudo apt-get install screen && exit;\
  exec bash -l'
 done
 
