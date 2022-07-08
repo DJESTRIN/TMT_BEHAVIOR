@@ -12,7 +12,7 @@ directory = "/home/pi/base/videos/"
 camera = picamera.PiCamera()
 os.chdir(directory)
 camera.start_recording(filename)
-time.sleep(60)
+time.sleep(10800)
 camera.stop_recording()
 
 os.chdir("/home/pi/base/videos/")
