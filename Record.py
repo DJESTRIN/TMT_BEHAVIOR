@@ -7,6 +7,7 @@ import os
 import picamera 
 from datetime import datetime
 import argparse
+from zipfile import ZipFile
 
 args=[]
 class Record(args):
@@ -19,6 +20,7 @@ class Record(args):
         self.ExperimentNotes()
         self.RecordVideo()
         self.ZipList()
+        self.ZipVideo()
         
     def FileName(self):
         self.datenow = datetime.strftime("Datetime_%m_%d_%Y_%H_%M_%S")
@@ -48,7 +50,7 @@ class Record(args):
         os.chdir(self.starting_dir)
     
     def ZipList(self):
-        """ Create list of files that will need to be zipped and sent to server """
+        """ Create list of files that were zipped """
         logical = os.path.exists(self.args.ziplistfile)
         if logical:
             ziplogfile = open(self.args.ziplistfile, "w")
@@ -59,6 +61,12 @@ class Record(args):
             ziplog = [self.filename_video + "\n"]
             ziplogfile.writelines(ziplog)
             ziplogfile.close()
+    
+    def ZipVideo(self):
+        """ Zip files """
+        os.chdir(self.args.video_dir)
+        with ZipFile((self.filename_video[:,-4]+".zip"), 'w') as zipf:
+            zipf.write(os.path.join(self.args.video_dir,self.filename_video), arcname=self.filename_video)
         
     
 if __name__ == "__main__":
