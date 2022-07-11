@@ -6,7 +6,7 @@ IPaddress=$(hostname -I)
 IPaddress="$IPaddress"
 IPaddress="pi@"$IPaddress
 
-if [["$IP"== "$IPaddress"]];
+if [ "$IP"== "$IPaddress" ];
 	then
 		sudo python ~/base/code/temp/Record.py --IP $IP --box $box --experiment $experiment --cage $cage --animal $animal --totaltime $totaltime --sex $sex --weight $weight --dob $dob --strain $strain --virus $virus --day $day --notes $notes --ziplistfile $ziplistfile --videodir $videodir --logdir $logdir
 		break
