@@ -3,7 +3,7 @@
 Orginally written for using during secure shell login.
 Written by David James Estrin on 07/01/22.  """
 import os
-#import picamera 
+import picamera 
 from datetime import datetime
 import argparse
 from zipfile import ZipFile
