@@ -23,7 +23,7 @@ class Record():
         
     def FileName(self):
         t = datetime.now()
-	self.datenow = t.strftime("%m_%d_%Y_%H_%M_%S")
+        self.datenow = t.strftime("%m_%d_%Y_%H_%M_%S")
         self.filename_video = self.datenow + '_' + str(self.args.box) + str(self.args.cage) + str(self.args.totaltime) + \
         str(self.args.animal) + str(self.args.sex) + str(self.args.weight) + str(self.args.dob) + \
         str(self.args.strain) + str(self.args.virus) + str(self.args.day) + '.h264'
