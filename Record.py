@@ -43,10 +43,10 @@ class Record():
         
     def RecordVideo(self):
         os.chdir(str(self.args.videodir))
-        #camera = picamera.PiCamera() 
-        #camera.start_recording(self.filename_video)
-        #camera.wait_recording(int(self.args.totaltime))
-        #camera.stop_recording()
+        camera = picamera.PiCamera() 
+        camera.start_recording(self.filename_video)
+        camera.wait_recording(int(self.args.totaltime))
+        camera.stop_recording()
         os.chdir(self.starting_dir)
     
     def ZipList(self):
@@ -65,7 +65,7 @@ class Record():
     def ZipVideo(self):
         """ Zip files """
         os.chdir(str(self.args.videodir))
-        with ZipFile((self.filename_video[:,-4]+".zip"), 'w') as zipf:
+        with ZipFile((self.filename_video[:-4]+".zip"), 'w') as zipf:
             zipf.write(os.path.join(str(self.args.video_dir),self.filename_video), arcname=self.filename_video)
         
     
