@@ -2,7 +2,6 @@
 """ Record. This script is used for running a PiCamera from the command line. 
 Orginally written for using during secure shell login.
 Written by David James Estrin on 07/01/22.  """
-
 import os
 import picamera 
 from datetime import datetime
@@ -10,8 +9,8 @@ import argparse
 from zipfile import ZipFile
 
 args=[]
-class Record(args):
-    def __init__(self,args, start_dir):
+class Record():
+    def __init__(self, args, start_dir):
         self.args = args
         self.starting_dir = start_dir
         
@@ -91,8 +90,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     """ Create TMTtrial Class and run """
-    Record(args, os.getcwd())
-
+    mouse = Record()
+    mouse(args,os.getcwd())
 
  
  

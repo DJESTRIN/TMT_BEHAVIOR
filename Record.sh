@@ -9,6 +9,6 @@ do
 sshpass -p "estrin1" ssh -n -tt $IP 'tag=$(date "+%Y%m%d%H%M%S") && screen -dmS $tag bash -c "echo $message; exec bash" && screen -r $tag -p 0 -X stuff "bash ~/base/code/temp/Record_RUN.sh\n" && exit; exec bash -l'
 done < schedule.txt
 
-sleep $totaltime
+sleep ${totaltime}s
 
 echo "Recordings should have finished"
