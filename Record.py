@@ -22,7 +22,8 @@ class Record():
         self.ZipVideo()
         
     def FileName(self):
-        self.datenow = datetime.strftime("Datetime_%m_%d_%Y_%H_%M_%S")
+        t = datetime.now()
+	self.datenow = t.strftime("%m_%d_%Y_%H_%M_%S")
         self.filename_video = self.datenow + '_' + str(self.args.box) + str(self.args.cage) + str(self.args.totaltime) + \
         str(self.args.animal) + str(self.args.sex) + str(self.args.weight) + str(self.args.dob) + \
         str(self.args.strain) + str(self.args.virus) + str(self.args.day) + '.h264'
@@ -87,11 +88,10 @@ if __name__ == "__main__":
     parser.add_argument('--ziplistfile', action='store', type=str, nargs='?')
     parser.add_argument('--video_dir', action='store', type=str, nargs='?')
     parser.add_argument('--log_dir', action='store', type=str, nargs='?')
-    args = parser.parse_args()
+    args, unknown = parser.parse_known_args()
     
     """ Create TMTtrial Class and run """
-    mouse = Record()
-    mouse(args,os.getcwd())
+    mouse = Record(args,os.getcwd())
 
  
  
