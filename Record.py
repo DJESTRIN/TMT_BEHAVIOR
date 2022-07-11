@@ -34,39 +34,39 @@ class Record():
         return 
         
     def ExperimentNotes(self):
-        os.chdir(self.args.log_dir) #Hard coded variable :(
+        os.chdir(str(self.args.log_dir)) #Hard coded variable :(
         logfile = open(self.filename_log,"w")
-        logs = [str(self.args.ip) + "\n" ,self. str + "\n", (self.args.notes) + "\n"]
+        logs = [str(self.args.ip) + "\n" ,str(self.args.notes) + "\n"]
         logfile.writelines(logs)
         logfile.close()
         os.chdir(self.starting_dir)
         
     def RecordVideo(self):
-        os.chdir(self.args.video_dir)
+        os.chdir(str(self.args.video_dir))
         camera = picamera.PiCamera() 
         camera.start_recording(self.filename_video)
-        camera.wait_recording(self.args.totaltime)
+        camera.wait_recording(int(self.args.totaltime))
         camera.stop_recording()
         os.chdir(self.starting_dir)
     
     def ZipList(self):
         """ Create list of files that were zipped """
-        logical = os.path.exists(self.args.ziplistfile)
+        logical = os.path.exists(str(self.args.ziplistfile))
         if logical:
-            ziplogfile = open(self.args.ziplistfile, "w")
+            ziplogfile = open(str(self.args.ziplistfile), "w")
             ziplogfile.write("\n" + self.filename)
             ziplogfile.close()
         else:
-            ziplogfile = open(self.args.ziplistfile, "w")
+            ziplogfile = open(str(self.args.ziplistfile), "w")
             ziplog = [self.filename_video + "\n"]
             ziplogfile.writelines(ziplog)
             ziplogfile.close()
     
     def ZipVideo(self):
         """ Zip files """
-        os.chdir(self.args.video_dir)
+        os.chdir(str(self.args.video_dir))
         with ZipFile((self.filename_video[:,-4]+".zip"), 'w') as zipf:
-            zipf.write(os.path.join(self.args.video_dir,self.filename_video), arcname=self.filename_video)
+            zipf.write(os.path.join(str(self.args.video_dir),self.filename_video), arcname=self.filename_video)
         
     
 if __name__ == "__main__":
