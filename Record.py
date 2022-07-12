@@ -54,7 +54,7 @@ class Record():
         logical = os.path.exists(str(self.args.ziplistfile))
         if logical:
             ziplogfile = open(str(self.args.ziplistfile), "w")
-            ziplogfile.write("\n" + self.filename)
+            ziplogfile.write("\n" + self.filename_video)
             ziplogfile.close()
         else:
             ziplogfile = open(str(self.args.ziplistfile), "w")
