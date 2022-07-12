@@ -1,14 +1,14 @@
-pi@192.168.0.122,1,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.217,2,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.191,3,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.185,4,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.246,5,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.163,6,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.172,7,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.227,8,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.108,9,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.224,10,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.249,11,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.103,12,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
-pi@192.168.0.167,13,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.122,1,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.217,2,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.191,3,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.185,4,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.246,5,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.163,6,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.172,7,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.227,8,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.108,9,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.224,10,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.249,11,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.103,12,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
+pi@192.168.0.167,13,TMT,1442335,right_cut,60,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/home/pi/base/ziplist.txt,/home/pi/base/videos/,/home/pi/base/logs/
 
