@@ -65,7 +65,7 @@ class Record():
     def ZipVideo(self):
         """ Zip files """
         os.chdir(str(self.args.videodir))
-        with ZipFile((self.filename_video[:-4]+".zip"), 'w') as zipf:
+        with ZipFile((self.filename_video[:-4]+"zip"), 'w') as zipf:
             zipf.write(os.path.join(str(self.args.video_dir),self.filename_video), arcname=self.filename_video)
         
     
