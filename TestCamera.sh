@@ -13,7 +13,7 @@ echo ${line[0]}
 sshpass -p "estrin1" ssh -n -tt ${line[0]} 'tag=$(date "+%Y%m%d%H%M%S") && screen -dmS $tag bash -c "echo $message; exec bash" && screen -r $tag -p 0 -X stuff "bash ~/base/code/temp/RUN.sh\n" && exit; exec bash -l'
 done
 
-sleep 10800
+sleep 60
 
 echo "Zipping videos"
 while IFS=, read IP box; do
@@ -26,4 +26,4 @@ while IFS=, read IP box; do
 cd ~/test_video_archive/${box}/
 unzip test_zip.zip
 echo "box number" $box "has had data unzipped!"
-done < IPS.txt 
+done < IPS.txt
