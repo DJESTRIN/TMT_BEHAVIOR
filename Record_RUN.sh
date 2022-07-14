@@ -12,8 +12,8 @@ echo $IP
 if [ $IP == $IPaddress ];
 	then
 		todaydir="$(date +"%m_%d_%Y")"
-		videodir="$videodir/$todaydir/"
-		logdir="$logdir/$todaydir/"
+		videodir="$videodir$todaydir/"
+		logdir="$logdir$todaydir/"
 		mkdir -p videodir
 		mkdir -p logdir
 		echo "IP addresses MATCH!"
