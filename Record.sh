@@ -6,7 +6,7 @@ echo $message
 
 while IFS=, read IP box experiment cage animal totaltime sex weight dob strain virus day notes ziplistfile videodir logdir;
 do
-sshpass -p "estrin1" ssh -n -tt $IP 'tag=$(date "+%Y%m%d%H%M%S") && screen -dmS $tag bash -c "echo $message; exec bash" && screen -r $tag -p 0 -X stuff "bash ~/base/code/temp/Record_RUN.sh\n" && exit; exec bash -l'
+sshpass -p "estrin1" ssh -n -tt $IP 'tag=$(date "+%Y%m%d%H%M%S") && screen -dmS $tag bash -c "echo $message; exec bash" && screen -r $tag -p 0 -X stuff "bash /media/usb/base/code/temp/Record_RUN.sh\n" && exit; exec bash -l'
 done < schedule.txt
 
 sleep ${totaltime}s
