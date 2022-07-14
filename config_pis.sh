@@ -12,8 +12,8 @@ Lines=$(cat IPs.txt)
 
 # SSH in and prepare the PIs
 # Set up folders
-base_dirs=( /media/usb/base/logs/ /media/usb/base/videos/ /media/usb/base/code/ )
-code_dir=( /media/usb/base/code/temp/)
+base_dirs=( /media/usb/base/logs/ /media/usb/base/videos/ /home/pi/base/code/ )
+code_dir=( /home/pi/base/code/temp/)
 
 #Loop through IP addresses
 for IP in $Lines;
