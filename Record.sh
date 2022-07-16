@@ -8,7 +8,3 @@ while IFS=, read IP box experiment cage animal totaltime sex weight dob strain v
 do
 sshpass -p "estrin1" ssh -n -tt $IP 'tag=$(date "+%Y%m%d%H%M%S") && screen -dmS $tag bash -c "echo $message; exec bash" && screen -r $tag -p 0 -X stuff "bash /home/pi/base/code/temp/Record_RUN.sh\n" && exit; exec bash -l'
 done < schedule.txt
-
-sleep ${totaltime}s
-
-echo "Recordings should have finished"
