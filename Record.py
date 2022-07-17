@@ -44,6 +44,7 @@ class Record():
     def RecordVideo(self):
         os.chdir(str(self.args.videodir))
         camera = picamera.PiCamera() 
+        camera.framerate = 10
         camera.start_recording(self.filename_video)
         camera.wait_recording(int(self.args.totaltime))
         camera.stop_recording()
