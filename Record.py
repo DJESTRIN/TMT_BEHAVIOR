@@ -7,6 +7,7 @@ import picamera
 from datetime import datetime
 import argparse
 from zipfile import ZipFile
+import shutil
 
 args=[]
 class Record():
@@ -18,7 +19,6 @@ class Record():
         self.FileName()
         self.ExperimentNotes()
         self.RecordVideo()
-        self.ZipList()
         self.ZipVideo()
         
     def FileName(self):
@@ -26,7 +26,7 @@ class Record():
         self.datenow = t.strftime("%m_%d_%Y_%H_%M_%S")
         self.filename_video = 'Date_' + self.datenow + '_' + str(self.args.box) + '_' +  str(self.args.cage) + '_' +  str(self.args.totaltime) + '_' +  \
         str(self.args.animal) + '_' +  str(self.args.sex) + '_' +  str(self.args.weight) + '_' +  str(self.args.dob) + '_' +  \
-        str(self.args.strain) + '_' +  str(self.args.virus) + '_' +  str(self.args.day) + '.h264'
+        str(self.args.strain) + '_' +  str(self.args.virus) + '_' +  str(self.args.day) + '/'
         
         self.filename_log = 'Date_' + self.datenow + '_' + str(self.args.box) + '_' +  str(self.args.cage) + '_' +  str(self.args.totaltime) + '_' +  \
         str(self.args.animal) + '_' +  str(self.args.sex) + '_' +  str(self.args.weight) + '_' +  str(self.args.dob) + '_' +  \
@@ -43,31 +43,24 @@ class Record():
         
     def RecordVideo(self):
         os.chdir(str(self.args.videodir))
+        os.mkdir(self.filename_video)
+        os.chdir(os.path.join(str(self.args.videodir),self.filename_video))
         camera = picamera.PiCamera() 
-        camera.framerate = 10
-        camera.start_recording(self.filename_video)
-        camera.wait_recording(int(self.args.totaltime))
+        #Split a single session's recordings into 3 videos (1 hour each for real experiment)
+        camera.start_recording('1.h264')
+        camera.wait_recording(int(self.args.totaltime)/3)
+        for i in range(2,4):
+            camera.split_recording('%d.h264' % i)
+            camera.wait_recording(int(self.args.totaltime)/3)
         camera.stop_recording()
         os.chdir(self.starting_dir)
-    
-    def ZipList(self):
-        """ Create list of files that were zipped """
-        logical = os.path.exists(str(self.args.ziplistfile))
-        if logical:
-            ziplogfile = open(str(self.args.ziplistfile), "w")
-            ziplogfile.write("\n" + self.filename_video)
-            ziplogfile.close()
-        else:
-            ziplogfile = open(str(self.args.ziplistfile), "w")
-            ziplog = [self.filename_video + "\n"]
-            ziplogfile.writelines(ziplog)
-            ziplogfile.close()
     
     def ZipVideo(self):
         """ Zip files """
         os.chdir(str(self.args.videodir))
-        with ZipFile((self.filename_video[:-4]+"zip"), 'w') as zipf:
+        with ZipFile((self.filename_video[:-1]+".zip"), 'w') as zipf:
             zipf.write(os.path.join(str(self.args.videodir),self.filename_video), arcname=self.filename_video)
+        shutil.rmtree(self.filename_video)
         
     
 if __name__ == "__main__":
