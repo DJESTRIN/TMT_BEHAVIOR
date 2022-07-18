@@ -48,10 +48,10 @@ class Record():
         camera = picamera.PiCamera() 
         #Split a single session's recordings into 3 videos (1 hour each for real experiment)
         camera.start_recording('1.h264')
-        camera.wait_recording(int(self.args.totaltime)/3)
-        for i in range(2,4):
+        camera.wait_recording(int(self.args.totaltime)/10)
+        for i in range(2,11):
             camera.split_recording('%d.h264' % i)
-            camera.wait_recording(int(self.args.totaltime)/3)
+            camera.wait_recording(int(self.args.totaltime)/10)
         camera.stop_recording()
         os.chdir(self.starting_dir)
     
