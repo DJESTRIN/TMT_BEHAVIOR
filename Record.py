@@ -19,7 +19,6 @@ class Record():
         self.FileName()
         self.ExperimentNotes()
         self.RecordVideo()
-        self.ZipVideo()
         
     def FileName(self):
         t = datetime.now()
@@ -54,15 +53,7 @@ class Record():
             camera.wait_recording(int(self.args.totaltime)/10)
         camera.stop_recording()
         os.chdir(self.starting_dir)
-    
-    def ZipVideo(self):
-        """ Zip files """
-        os.chdir(str(self.args.videodir))
-        with ZipFile((self.filename_video[:-1]+".zip"), 'w') as zipf:
-            zipf.write(os.path.join(str(self.args.videodir),self.filename_video), arcname=self.filename_video)
-        shutil.rmtree(self.filename_video)
         
-    
 if __name__ == "__main__":
     """ Parse command line arguements """
     parser = argparse.ArgumentParser()
