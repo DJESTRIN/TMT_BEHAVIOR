@@ -1,5 +1,5 @@
 pi@192.168.0.122,1,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.127,2,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.127,2,TMT,1442335,5,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.115,3,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.185,4,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.246,5,TMT,1442335,right_cut,10800,male,30g,09_20_1990,fostrap,aavrghsyndiotdtomato,habituation1,nothing to say,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
