@@ -1,10 +1,12 @@
 #!/bin/bash
-echo "Collecting recording data via Rsync to external hard drive"
+echo "Collecting recording data via Rsync to server"
 while IFS=, read IP box experiment cage animal totaltime sex weight dob strain virus day notes ziplistfile videodir logdir;
 do
-mkdir -p /exfat/ESTRIN_RECORDING_SYSTEM/$box/
-sshpass -p "estrin1" rsync -chavzP --no-o --no-g --no-perms --stats $IP:/media/usb/base/videos/ /exfat/ESTRIN_RECORDING_SYSTEM/$box/
+ssh -n -tt $IP "rsync -varz --stats /media/usb/base/videos/07_18_2022/ dje4001@scu-vis1.med.cornell.edu:/athena/listonlab/store/dje4001/rsync_data/BB0046_RECORDING_SYSTEM/ && exit; exec bash -l"
 done < /home/pi/TMT_BEHAVIOR/schedule.txt
 
 echo "Finished"
+
+# rsync -varz --stats /media/usb/base/videos/07_18_2022/ dje4001@scu-vis1.med.cornell.edu:/athena/listonlab/store/dje4001/rsync_data/BB0046_RECORDING_SYSTEM/
+
 
