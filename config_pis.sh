@@ -27,6 +27,8 @@ do
 	done
 
 #git clone all nessesary code
+sshpass -p "estrin1" ssh -t ${IP[0]} 'sudo killall screen $$ exit; exec bash -l'
+sshpass -p "estrin1" ssh -t ${IP[0]} 'sudo mount /dev/sdb1 /media/usb -o uid=pi,gid=pi && exit; exec bash -l'
 sshpass -p "estrin1" ssh -tt ${IP[0]} 'git clone https://github.com/DJESTRIN/TMT_BEHAVIOR/ temp && sudo mv -v temp '${base_dirs[2]}' &&\
 sudo rm -rf temp && exit; exec bash -l'
 done
