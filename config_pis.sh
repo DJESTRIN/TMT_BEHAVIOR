@@ -28,17 +28,16 @@ do
 
 #git clone all nessesary code
 sshpass -p "estrin1" ssh -t ${IP[0]} 'sudo killall screen $$ exit; exec bash -l'
-sshpass -p "estrin1" ssh -t ${IP[0]} 'sudo mount /dev/sdb1 /media/usb -o uid=pi,gid=pi && exit; exec bash -l'
 sshpass -p "estrin1" ssh -tt ${IP[0]} 'git clone https://github.com/DJESTRIN/TMT_BEHAVIOR/ temp && sudo mv -v temp '${base_dirs[2]}' &&\
 sudo rm -rf temp && exit; exec bash -l'
 done
 
 # Install all nessesary packages
-for IP in $Lines;
-do
-sshpass -p "estrin1" ssh -tt ${IP[0]} 'cd '${code_dir[0]}' && pip install -r requirements.txt && sudo apt-get install sshpass && sudo apt-get install screen && exit;\
- exec bash -l'
-done
+#for IP in $Lines;
+#do
+#estrin1" ssh -tt ${IP[0]} cd ${code_dir[0]}' && pip install -r requirements.txt && sudo apt-get install sshpass && sudo apt-get install screen && exit;\
+# exec bash -l'
+#done
 
 echo "Finished preparing this raspberry pi"
 echo off
