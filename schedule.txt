@@ -1,15 +1,15 @@
-pi@192.168.0.122,1,TMT_experimental,4022675,A_1,10800,male,39_2g,08_11_2022,FosCreERxAi9,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.127,2,TMT_experimental,4022675,A_2,10800,male,39_3g,08_11_2022,FosCreERxAi9,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.115,3,TMT_experimental,4022675,A_3,10800,male,35_9g,08_11_2022,FosCreERxAi9,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.245,4,TMT_experimental,3976686,A_1,10800,male,35_7g,08_11_2022,FosCreERxAi9,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.170,5,TMT_experimental,3976686,A_2,10800,male,36_6g,08_11_2022,FosCreERxAi9,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.243,6,TMT_experimental,3976646,A_1,10800,male,47_2g,08_11_2022,FosCreERxAi9,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.175,7,TMT_experimental,3976646,A_2,10800,male,41_6g,08_11_2022,FosCreERxAi9,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.118,8,TMT_experimental,3976646,A_3,10800,male,45_1g,08_11_2022,FosCreERxAi9,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.246,9,TMT_experimental,3976688,A_1,10800,male,41_8g,08_11_2022,FosCreERxAI9,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.151,10,TMT_experimental,3976688,A_2,10800,male,43_2g,08_11_2022,FosCreERxAi0,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.108,11,TMT_experimental,3976688,A_3,10800,male,42_1g,08_11_2022,FosCreER,NA,habituation2,seconnd video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.148,12,TMT_experimental,3811435,A_1,10800,male,31_3g,08_11_2022,fostrap2,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.173,13,TMT_experimental,3811435,A_2,10800,male,30_0g,08_11_2022,fostrap2,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.177,14,TMT_experimental,3811435,A_3,10800,male,30_7g,08_11_2022,fostrap2,NA,habituation2,second video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.227,15,TMT_experimental,NO_MICE
+pi@192.168.0.122,1,TMT_experimental,4079848,A_1,10800,female,27_0g,08_12_2022,FosCreERxAi9,NA,habituation1,first video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.127,2,TMT_experimental,4079848,A_2,10800,female,30_0g,08_12_2022,FosCreERxAi9,NA,habituation1,first video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.115,3,TMT_experimental,4079848,A_3,10800,female,28_8g,08_12_2022,FosCreERxAi9,NA,habituation1,first video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.245,4,TMT_experimental,4079848,A_4,10800,female,27_7g,08_12_2022,FosCreERxAi9,NA,habituation1,first video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.170,5,TMT_experimental,4079848,A_5,10800,female,27_0g,08_12_2022,FosCreERxAi9,NA,habituation1,first video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.243,6,TMT_watercontrol_NO_MICE
+pi@192.168.0.175,7,TMT_watercontrol,NO_MICE
+pi@192.168.0.118,8,TMT_watercontrol,NO_MICE
+pi@192.168.0.246,9,TMT_watercontrol,NO_MICE
+pi@192.168.0.151,10,TMT_watercontrol,NO_MICE
+pi@192.168.0.108,11,TMT_watercontrol,NO_MICE
+pi@192.168.0.148,12,TMT_watercontrol,NO_MICE
+pi@192.168.0.173,13,TMT_watercontrol,NO_MICE
+pi@192.168.0.177,14,TMT_watercontrol,NO_MICE
+pi@192.168.0.227,15,TMT_watercontrol,NO_MICE
