@@ -1,6 +1,6 @@
 #!/bin/bash
 echo on
-
+#Used for configuration the FIRST time
 #Delete folders of interest
 cd
 sudo rm -rf temp 
@@ -30,6 +30,12 @@ do
 sshpass -p "estrin1" ssh -t ${IP[0]} 'sudo killall screen $$ exit; exec bash -l'
 sshpass -p "estrin1" ssh -tt ${IP[0]} 'git clone https://github.com/DJESTRIN/TMT_BEHAVIOR/ temp && sudo mv -v temp '${base_dirs[2]}' &&\
 sudo rm -rf temp && exit; exec bash -l'
+done
+
+# Install all nessesary packages
+for IP in $Lines;
+do
+sshpass -p "estrin1" ssh -tt ${IP[0]} 'cd /home/pi/base/code/temp/ && pip install -r requirements.txt && sudo apt-get install sshpass && sudo apt-get install screen && exit; exec bash -l'
 done
 
 echo "Finished preparing this raspberry pi"
