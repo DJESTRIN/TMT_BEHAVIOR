@@ -1,4 +1,5 @@
 #!/bin/bash
+
 #All targets in orchestra
 cd ~/TMT_BEHAVIOR/
 Lines=$(cat IPs.txt)
@@ -7,7 +8,7 @@ Lines=$(cat IPs.txt)
 for IP in $Lines;
 do
 #Delete all videos on the pi
-sshpass -p "estrin1" ssh -tt ${IP[0]} 'sudo killall screen && exit; exec bash -l'
+sshpass -p "estrin1" ssh -tt ${IP[0]} 'sudo killall screen && sudo killall python && exit; exec bash -l'
 done
 
 
