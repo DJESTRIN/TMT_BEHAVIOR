@@ -5,11 +5,11 @@ pi@192.168.0.245,4,TMT_watercontrol,4079848,A_4,10800,female,26_4g,08_16_2022,Fo
 pi@192.168.0.170,5,TMT_watercontrol,4079848,A_5,10800,female,25_4g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.243,6,TMT_watercontrol,3976645,A_1,10800,male,51_8g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.175,7,TMT_watercontrol,3976645,A_2,10800,male,35_0g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.118,8,TMT_watercontrol,3976644,A_1,10800,female,44_6g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.227,15,TMT_watercontrol,3976644,A_1,10800,female,44_6g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.246,9,TMT_watercontrol,3976644,A_2,10800,female,46_4g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.151,10,TMT_watercontrol,3976644,A_3,10800,female,42_1g,08_16_2022,FosCreERxAi9,NA,experimentalday,,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.108,11,TMT_watercontrol,3976687,A_1,10800,female,32_0g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.148,12,TMT_watercontrol,3976687,A_2,10800,female,28_1g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.173,13,TMT_watercontrol,3976687,A_3,10800,female,28_2g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.177,14,TMT_watercontrol,3976687,A_4,10800,female,35_0g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.227,15,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.118,8,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
