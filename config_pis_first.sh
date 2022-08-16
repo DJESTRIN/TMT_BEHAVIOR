@@ -1,5 +1,6 @@
 #!/bin/bash
 echo on
+
 #Used for configuration the FIRST time
 #Delete folders of interest
 cd
@@ -8,7 +9,7 @@ sudo rm -rf base
 
 #All targets in orchestra
 cd ~/TMT_BEHAVIOR/
-Lines=$(cat IPs.txt)
+Lines=$(cat IPst.txt)
 
 # SSH in and prepare the PIs
 # Set up folders

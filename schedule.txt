@@ -1,15 +1,15 @@
-pi@192.168.0.122,1,TMT_experimental,4022675,A_1,10800,male,37_8g,08_15_2022,FosCreERxAi9,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.127,2,TMT_experimental,4022675,A_2,10800,male,38_5g,08_15_2022,FosCreERxAi9,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.115,3,TMT_experimental,4022675,A_3,10800,male,34_8g,08_15_2022,FosCreERxAi9,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.245,4,TMT_experimental,3976686,A_1,10800,male,34_3g,08_15_2022,FosCreERxAi9,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.170,5,TMT_experimental,3976686,A_2,10800,male,36_7g,08_15_2022,FosCreERxAi9,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.243,6,TMT_experimental,3976646,A_1,10800,male,44_7g,08_15_2022,FosCreERxAi9,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.175,7,TMT_experimental,3976646,A_2,10800,male,39_8g,08_15_2022,FosCreERxAi9,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.118,8,TMT_experimental,3976646,A_3,10800,male,43_2g,08_15_2022,FosCreERxAi9,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.246,9,TMT_experiemntal,3976688,A_1,10800,male,40_3g,08_15_2022,FosCreERxAi9,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.151,10,TMT_experimental,3976688,A_2,10800,male,41_1g,08_15_2022,FosCreERxAi9,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.108,11,TMT_experimental,3976688,A_3,10800,male,41_3g,08_15_2022,FosCreERxAi9,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.148,12,TMT_experimental,3811435,A_1,10800,male,30_5g,08_15_2022,FosTrap2,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.173,13,TMT_experimental,3811435,A_2,10800,male,29_9g,08_15_2022,FosTrap2,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.177,14,TMT_experimental,3811435,A_3,10800,male,30_0g,08_15_2022,FosTRAP2,NA,habituation6,sixth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.227,15,TMT_experimental,NO_MICE,08_15_2022,FosCreERxAi9,NA,habituation5,fifthvideo,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.122,1,TMT_watercontrol,4079848,A_1,10800,female,25_6g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.127,2,TMT_watercontrol,4079848,A_2,10800,female,29_1g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.115,3,TMT_watercontrol,4079848,A_3,10800,female,26_8g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.245,4,TMT_watercontrol,4079848,A_4,10800,female,26_4g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.170,5,TMT_watercontrol,4079848,A_5,10800,female,25_4g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.243,6,TMT_watercontrol,3976645,A_1,10800,male,51_8g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.175,7,TMT_watercontrol,3976645,A_2,10800,male,35_0g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.118,8,TMT_watercontrol,3976644,A_1,10800,female,44_6g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.246,9,TMT_watercontrol,3976644,A_2,10800,female,46_4g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.151,10,TMT_watercontrol,3976644,A_3,10800,female,42_1g,08_16_2022,FosCreERxAi9,NA,experimentalday,,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.108,11,TMT_watercontrol,3976687,A_1,10800,female,32_0g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.148,12,TMT_watercontrol,3976687,A_2,10800,female,28_1g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.173,13,TMT_watercontrol,3976687,A_3,10800,female,28_2g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.177,14,TMT_watercontrol,3976687,A_4,10800,female,35_0g,08_16_2022,FosCreERxAi9,NA,experimentalday,fifth video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.227,15,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
