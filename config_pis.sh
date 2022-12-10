@@ -12,8 +12,8 @@ Lines=$(cat IPs.txt)
 
 # SSH in and prepare the PIs
 # Set up folders
-base_dirs=( /media/usb/base/logs/ /media/usb/base/videos/ /home/pi/base/code/ )
-code_dir=( /home/pi/base/code/temp/)
+base_dirs=( /media/usb/base/logs/ /media/usb/base/videos/ /media/usb/base/code/ )
+code_dir=( /media/usb/base/code/temp/)
 
 #Loop through IP addresses
 for IP in $Lines;
@@ -27,7 +27,7 @@ do
 	done
 
 #git clone all nessesary code
-sshpass -p "estrin1" ssh -t ${IP[0]} 'sudo killall screen $$ exit; exec bash -l'
+sshpass -p "estrin1" ssh -t ${IP[0]} '(sudo killall screen || echo nvm) && exit; exec bash -l'
 sshpass -p "estrin1" ssh -tt ${IP[0]} 'git clone https://github.com/DJESTRIN/TMT_BEHAVIOR/ temp && sudo mv -v temp '${base_dirs[2]}' &&\
 sudo rm -rf temp && exit; exec bash -l'
 done

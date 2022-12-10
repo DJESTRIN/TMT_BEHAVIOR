@@ -8,13 +8,13 @@ now = datetime.datetime.now()
 now = now.strftime("%Y_%m_%d_%H_%M_%S")
 
 filename = now + "_test.h264"
-directory = "/home/pi/base/videos/"
+directory = "/media/usb/base/videos/"
 camera = picamera.PiCamera()
 os.chdir(directory)
 camera.start_recording(filename)
 time.sleep(60)
 camera.stop_recording()
 
-os.chdir("/home/pi/base/videos/")
+os.chdir("/media/usb/base/videos/")
 with ZipFile("test_zip.zip", 'w') as zipf:
     zipf.write(os.path.join(directory,filename), arcname=filename)

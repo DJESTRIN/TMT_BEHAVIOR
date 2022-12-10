@@ -8,7 +8,7 @@ Lines=$(cat IPs.txt)
 for IP in $Lines;
 do
 #Delete all videos on the pi
-sshpass -p "estrin1" ssh -tt ${IP[0]} 'sudo killall screen && sudo killall python && exit; exec bash -l'
+sshpass -p "estrin1" ssh -tt ${IP[0]} '(sudo killall screen || echo noscreens) && (sudo killall python || echo nopython) && exit; exec bash -l'
 done
 
 
