@@ -1,15 +1,14 @@
-pi@192.168.0.122,1,TMT_experimental,4022675,A_1,10800,male,37_7g,08_16_2022,FosCreERxAi9,NA,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.127,2,TMT_experimental,4022675,A_2,10800,male,38_2g,08_16_2022,FosCreERxAi9,NA,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.115,3,TMT_experimental,4022675,A_3,10800,male,34_8g,08_16_2022,FosCreERxAi9,NA,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.245,4,TMT_experimental,3976686,A_1,10800,male,34_6g,08_16_2022,FosCreERxAi9,NA,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.170,5,TMT_experimental,3976686,A_2,10800,male,36_2g,08_16_2022,FosCreERxAi9,NA,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.243,6,TMT_experimental,3976646,A_1,10800,male,44_0g,08_16_2022,FosCreERxAi9,NA,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.175,7,TMT_experimental,3976646,A_2,10800,male,40_4g,08_16_2022,FosCreERxAi9,NA,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.227,15,TMT_experimental,3976646,A_3,10800,male,42_7g,08_16_2022,FosCreERxAi9,NA,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.246,9,TMT_experimental,3976688,A_1,10800,male,40_0g,08_16_2022,FosCreERxAi9,NA,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.151,10,TMT_experimental,3976688,A_2,10800,male,40_5g,08_16_2022,FosCreERxAi9,NA,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.108,11,TMT_experimental,3976688,A_3,10800,male,40_6g,08_16_2022,FosCreERxAi9,NA,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.148,12,TMT_experimental,3811435,A_1,10800,male,30_2g,08_16_2022,FosTRAP2,aavrghysndiotdtomato,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.173,13,TMT_experimental,3811435,A_2,10800,male,30_0,08_16_2022,FosTRAP2,aavrghsyndiotdtomato,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.177,14,TMT_experimental,3811435,A_3,10800,male,30_0g,08_16_2022,FosTRAP2,aavrghsyndiotdtomato,experimentalday,seventh video,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.118,8,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.102,1,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.107,2,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.115,3,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.106,4,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.110,5,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.109,6,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.103,8,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.249,9,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.151,10,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.104,11,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.150,12,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.101,13,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.177,14,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.228,15,EXPERIMENT,CAGE,ANIMALNUMBER,DURATION,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
