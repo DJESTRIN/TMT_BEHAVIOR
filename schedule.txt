@@ -10,6 +10,6 @@ pi@192.168.0.151,10,TEST,1,ANIMALNUMBER,600,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,
 pi@192.168.0.104,11,TEST,1,ANIMALNUMBER,600,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.150,12,TEST,1,ANIMALNUMBER,600,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.101,13,TEST,1,ANIMALNUMBER,600,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
-pi@192.168.0.177,14,TEST,1,ANIMALNUMBER,600,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
+pi@192.168.0.174,14,TEST,1,ANIMALNUMBER,600,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 pi@192.168.0.228,15,TEST,1,ANIMALNUMBER,600,SEX,WEIGHT,DATEOFBIRTH,STRAIN,VIRUS,DAY,NOTES,/media/usb/base/ziplist.txt,/media/usb/base/videos/,/media/usb/base/logs/
 
