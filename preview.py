@@ -8,7 +8,7 @@ now = datetime.datetime.now()
 now = now.strftime("%Y_%m_%d_%H_%M_%S")
 
 filename = now + "_test.h264"
-directory = "/media/usb/base/videos/"
+directory = "/home/pi/NAS/"
 camera = picamera.PiCamera()
 os.chdir(directory)
 camera.start_recording(filename)
