@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #All targets in orchestra
-cd ~/TMT_BEHAVIOR/
-Lines=$(cat IPs.txt)
+cd /home/pi/TMT_BEHAVIOR/
+Lines=$(cat IPaddresses.txt)
 
 #Loop through IP addresses
 for IP in $Lines;
