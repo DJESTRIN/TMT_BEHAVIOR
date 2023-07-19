@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "Recording video"
-sudo python ~/base/code/temp/preview.py
+sudo python /home/pi/TMT_BEHAVIOR/preview.py
 exit
 exec $SHELL
