@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Syncrhonising computers"
+
 while IFS=, read IP box;
 do
 

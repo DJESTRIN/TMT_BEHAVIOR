@@ -9,7 +9,7 @@ IPaddress="pi@"$IPaddress
 echo $IPaddress
 echo $IP
 
-if [ $IP == $IPaddress ];
+if [[ "$IPaddress" == *"$IP"*  ]];
 	then
 		todaydir="$(date +"%m_%d_%Y")"
 		videodir="$videodir$todaydir/"
@@ -22,7 +22,8 @@ if [ $IP == $IPaddress ];
 else
 	echo "Addresses do not match"
 fi
-done < /home/pi/schedule.txt
+
+done < /home/pi/TMT_BEHAVIOR/schedule.txt
 
 exit
 exec $SHELL
