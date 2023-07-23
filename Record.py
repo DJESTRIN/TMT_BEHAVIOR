@@ -44,7 +44,7 @@ class Record():
         os.chdir(str(self.args.videodir))
         os.mkdir(self.filename_video)
         os.chdir(os.path.join(str(self.args.videodir),self.filename_video))
-        camera = picamera.PiCamera() 
+        camera = picamera.PiCamera(framerate=20) 
         #Split a single session's recordings into 3 videos (1 hour each for real experiment)
         camera.start_recording('1.h264')
         camera.wait_recording(int(self.args.totaltime)/10)
